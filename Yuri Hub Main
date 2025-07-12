@@ -36,10 +36,6 @@ local Window = Rayfield:CreateWindow({
       Key = {"YuriCatIsSoCute20230912"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-
-local MainTab = Window:CreateTab("Main / 메인", nill) -- Title, Image
-local Section = Tab:CreateSection("Normal / 노말")
-
 local MainTab = Window:CreateTab("Rivals / 라이벌", nill) -- Title, Image
 local Section = Tab:CreateSection("Z3us Hub / No key")
 
@@ -58,12 +54,6 @@ local Button = Tab:CreateButton({
 })
 })
 
-
-Rayfield:Notify({
-   Title = "Script Executed. / 스크립트 실행 됨.",
-   Content = "Executed Succesfully.",
-   Duration = 6.5,
-   Image = nill,
 })
 
 
