@@ -39,3 +39,32 @@ local Window = Rayfield:CreateWindow({
 
 local MainTab = Window:CreateTab("Main / 메인", nill) -- Title, Image
 local Section = Tab:CreateSection("Normal / 노말")
+
+local MainTab = Window:CreateTab("Rivals / 라이벌", nill) -- Title, Image
+local Section = Tab:CreateSection("Z3us Hub / No key")
+
+local Button = Tab:CreateButton({
+   Name = "Execute Z3us",
+   Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/main.lua')))()
+   end,
+
+   local Section = Tab:CreateSection("Duck Hub / Key Needed")
+      local Button = Tab:CreateButton({
+   Name = "Execute Duck Hub",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/HexFG/duckhub/refs/heads/main/loader.lua'))()
+   end,
+})
+})
+
+
+Rayfield:Notify({
+   Title = "Script Executed. / 스크립트 실행 됨.",
+   Content = "Executed Succesfully.",
+   Duration = 6.5,
+   Image = nill,
+})
+
+
+})
