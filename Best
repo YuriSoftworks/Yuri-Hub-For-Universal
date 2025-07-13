@@ -183,7 +183,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERI
    end,
 })
 
-local Tab = Window:CreateTab("Steal A Brainlot", nill) -- Title, Image
+local Tab = Window:CreateTab("Steal A Brainlot / 브레인 롯 훔치기", nill) -- Title, Image
 local Section = Tab:CreateSection("Brain God, Secret Finder")
 local Button = Tab:CreateButton({
    Name = "Finder",
