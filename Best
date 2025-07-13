@@ -81,3 +81,78 @@ local Button = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/warprbx/NightRewrite/refs/heads/main/Night/Loader.luau"))()
    end,
 })
+
+local Tab = Window:CreateTab("Grow A Garden / 그어가", nill) -- Title, Image
+local Section = Tab:CreateSection("Speed Hub X")
+
+local Button = Tab:CreateButton({
+   Name = "Speed Hub X",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab:CreateSection("Other / 그 외")
+local Button = Tab:CreateButton({
+   Name = "Lunor Hub",
+   Callback = function()
+loadstring(game:HttpGet('https://lunor.dev/loader'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Night Rewrite",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/warprbx/NightRewrite/refs/heads/main/Night/Loader.luau"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab = Window:CreateTab("Rivals / 라이벌", nill) -- Title, Image
+local Section = Tab:CreateSection("Yuri Hub / Duck Hub")
+
+local Button = Tab:CreateButton({
+   Name = "Yuri Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YuriSoftworks/Yuri-Hub-Rivals/refs/heads/main/Yuri%20Hub%20Rivals"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Z3us Hub",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/main.lua')))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab = Window:CreateTab("Arsenal / 아스널", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Thunder Client")
+
+local Button = Tab:CreateButton({
+   Name = "Thunder Client",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/andrewdarkyyofficial/thunderclient/main/main.lua'))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab:CreateSection("Other / 그 외")
+local Button = Tab:CreateButton({
+   Name = "Quotas Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Insertl/QuotasHub/main/BETAv1.3"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Z3us Hub",
+   Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/main.lua')))()
+   -- The function that takes place when the button is pressed
+   end,
+})
