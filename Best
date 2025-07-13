@@ -121,6 +121,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/YuriSoftworks/Yuri-Hu
    end,
 })
 
+local Section = Tab:CreateSection("Other / 그 외")
 local Button = Tab:CreateButton({
    Name = "Z3us Hub",
    Callback = function()
@@ -129,7 +130,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERI
    end,
 })
 
-local Tab = Window:CreateTab("Arsenal / 아스널", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Arsenal / 아스널", nill) -- Title, Image
 local Section = Tab:CreateSection("Thunder Client")
 
 local Button = Tab:CreateButton({
