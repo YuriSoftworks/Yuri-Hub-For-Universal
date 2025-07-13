@@ -51,7 +51,7 @@ local Button = Tab:CreateButton({
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
    end,
-
+})
 local Button = Tab:CreateButton({
    Name = "UNC Check",
    Callback = function()
@@ -59,7 +59,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-conven
    -- The function that takes place when the button is pressed
    end,
 })
-})
+
 local Slider = Tab:CreateSlider({
    Name = "Speed / 스피드",
    Range = {0, 100},
@@ -148,6 +148,13 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERI
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Poly Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wzmh/PolyHub/refs/heads/main/main.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
 local Tab = Window:CreateTab("Arsenal / 아스널", nill) -- Title, Image
 local Section = Tab:CreateSection("Thunder Client")
 
@@ -172,6 +179,35 @@ local Button = Tab:CreateButton({
    Name = "Z3us Hub",
    Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERION/refs/heads/main/main.lua')))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab = Window:CreateTab("Steal A Brainlot", nill) -- Title, Image
+local Section = Tab:CreateSection("Brain God, Secret Finder")
+local Button = Tab:CreateButton({
+   Name = "Finder",
+   Callback = function()
+getgenv().Rarity = {
+    ["Brainrot God"] = { enabled = true }, -- set to true if you want to find that rarity. please understand;o
+    ["Secret"] = { enabled = true },
+    ["Mythic"] = { enabled = false },
+    ["Legendary"] = { enabled = false },
+    ["Epic"] = { enabled = false },
+    ["Rare"] = { enabled = false },
+    ["Common"] = { enabled = false },
+}
+notifywebhook = true -- false if you want your finds to not be shown
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoliScriptz/loader/refs/heads/main/finder.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab:CreateSection("Other / 그 외")
+local Button = Tab:CreateButton({
+   Name = "Alsploit",
+   Callback = function()
+loadstring(game:HttpGet("https://dpaste.com/6N2Y86CQS.txt"))()
    -- The function that takes place when the button is pressed
    end,
 })
