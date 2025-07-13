@@ -165,3 +165,33 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERI
    -- The function that takes place when the button is pressed
    end,
 })
+
+local Tab = Window:CreateTab("Steal A Brainlot", nill) -- Title, Image
+local Section = Tab:CreateSection("Finder / 브레인 갓, 시크릿 파인더")
+
+local Button = Tab:CreateButton({
+   Name = "Finder",
+   Callback = function()
+getgenv().Rarity = {
+    ["Brainrot God"] = { enabled = true }, -- set to true if you want to find that rarity. please understand;o
+    ["Secret"] = { enabled = true },
+    ["Mythic"] = { enabled = false },
+    ["Legendary"] = { enabled = false },
+    ["Epic"] = { enabled = false },
+    ["Rare"] = { enabled = false },
+    ["Common"] = { enabled = false },
+}
+notifywebhook = true -- false if you want your finds to not be shown
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoliScriptz/loader/refs/heads/main/finder.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Section = Tab:CreateSection("Other / 그 외")
+local Button = Tab:CreateButton({
+   Name = "Dpaste Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://dpaste.com/6N2Y86CQS.txt"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
