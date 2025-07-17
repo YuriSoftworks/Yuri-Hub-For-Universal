@@ -205,6 +205,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/DoliScriptz/loader/re
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Instant Steal / 즉시 훔치기 / F9를 눌러 키 확인",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Youifpg/Steal-a-Brianrot/refs/heads/main/ArbixHubBEST.lua"))()
+print("Key -- Arbix Hub")
+   -- The function that takes place when the button is pressed
+   end,
+})
+
 local Section = Tab:CreateSection("Other / 그 외")
 local Button = Tab:CreateButton({
    Name = "Alsploit",
@@ -214,7 +223,7 @@ loadstring(game:HttpGet("https://dpaste.com/6N2Y86CQS.txt"))()
    end,
 })
 
-local Tab = Window:CreateTab("Discord Invitwe / 디스코드 초대 / F9를 눌러 확인", nill)
+local Tab = Window:CreateTab("Discord Invite / 디스코드 초대 / F9를 눌러 확인", nill)
 local Button = Tab:CreateButton({
    Name = "Invite Of Yuri Cat Community",
    Callback = function()
