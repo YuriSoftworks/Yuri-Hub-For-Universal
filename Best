@@ -72,14 +72,30 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Infinite Jump",
+   Callback = function()
+game:GetService("UserInputService").JumpRequest:connect(function()
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")       
+    end)
+   end,
+})
+
 
 local Tab = Window:CreateTab("Bedwars / 배드워즈", nill) -- Title, Image
-local Section = Tab:CreateSection("Vape V4 / 베이프")
+local Section = Tab:CreateSection("Vape V4 Configs/ 베이프")
 
 local Button = Tab:CreateButton({
-   Name = "Vape V4",
+   Name = "Cat Vape V5",
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/new-qwertyui/CatV5/refs/heads/main/init.lua'), 'init.lua')()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "APE CLIENT",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sus237/Ape/main/NewMainScript.lua", true))()
    end,
 })
 
@@ -146,6 +162,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/wzmh/PolyHub/refs/hea
    -- The function that takes place when the button is pressed
    end,
 })
+
 local Tab = Window:CreateTab("Arsenal / 아스널", nill) -- Title, Image
 local Section = Tab:CreateSection("Thunder Client")
 
@@ -209,6 +226,49 @@ local Button = Tab:CreateButton({
    Callback = function()
 loadstring(game:HttpGet("https://dpaste.com/6N2Y86CQS.txt"))()
    -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Chill Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua")) (0)
+   end,
+})
+
+local Tab = Window:CreateTab("99 Night In the forest / 숲 속에서 99일 버티기", nill) -- Title
+local Section = Tab:CreateSection("VW / 보이드웨어")
+
+local Button = Tab:CreateButton({
+   Name = "Voidware",
+   Callback = function()
+loadstring(game:HttpGet("https://soluna-script.vercel.app/99-Nights-in-the-Forest.lua",true))()
+   end,
+})
+
+local Section = Tab:CreateSection("Other / 그 외")
+local Button = Tab:CreateButton({
+   Name = "Soluna Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://soluna-script.vercel.app/99-Nights-in-the-Forest.lua",true))()
+   end,
+})
+
+local Tab = Window:CreateTab("Hypershot / 하이퍼 샷", nill) -- Title
+local Section = Tab:CreateSection("Max Hub / 맥스 허브")
+local Button = Tab:CreateButton({
+   Name = "Max Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e115b107e044a8cfc35b87ce573d558f.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("부대 테러", nill) -- Title
+local Section = Tab:CreateSection("Biom Hub")
+local Button = Tab:CreateButton({
+   Name = "Biom Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://github.com/BIOMSCRIPT/Biom-Script-Hub-V2/raw/refs/heads/main/Script.lua"))()
    end,
 })
 
