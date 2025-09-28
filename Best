@@ -191,6 +191,30 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/blackowl1231/ZYPHERI
    end,
 })
 
+local Tab = Window:CreateTab("Hunty Zombie / 헌티 좀비", nill) -- Title, Image
+local Section = Tab:CreateSection("Than Hub / 탄 허브")
+local Button = Tab:CreateButton({
+   Name = "Than Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thantzy/thanhub/refs/heads/main/thanv1"))()`   end,
+})
+
+local Section = Tab:CreateSection("Alchemy Hub / 아르체미 허브")
+local Button = Tab:CreateButton({
+   Name = "Alchemy Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+   end,
+})
+
+local Section = Tab:CreateSection("Other / 그 외")
+local Button = Tab:CreateButton({
+   Name = "Solix Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/debunked69/solixloader/refs/heads/main/solix%20v2%20new%20loader.lua"))()
+   end,
+})
+
 local Tab = Window:CreateTab("Steal A Brainlot / 브레인 롯 훔치기", nill) -- Title, Image
 local Section = Tab:CreateSection("Brain God, Secret Finder")
 local Button = Tab:CreateButton({
